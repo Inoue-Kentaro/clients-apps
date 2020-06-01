@@ -1,0 +1,24 @@
+body > main {
+    height: 100%;
+}
+
+main > header{
+    height: 10%;
+}
+
+main > div {
+    background: black;
+    height: 90%;
+}
+
+#video-wrapper{
+    display: flex;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+#video-wrapper > video {
+    object-fit: contain;
+}

@@ -1,0 +1,47 @@
+<!doctype hmtl>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ビデオチャット</title>
+    <meta name="description" content="WebRTCを使ったビデオチャット、Video要素の直接接続">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/video_chat_raw.css">
+
+    <script src="js/video_chat_raw.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <header>
+	<h1>ビデオチャット</h1>
+      </header>
+      <div id="video-wrapper">
+	<video id="local-video"></video>
+      </div>
+    </main>
+
+    <div class="modal-wrapper">
+      <div class="modal-bg"></div>
+      <div id="login" class="modal-content">
+	<div>
+	  ユーザーネーム<br>
+	  <input type="text" id="user-name" value="名無し"></input>
+	</div>
+	<div>
+	  ルーム<br>
+	  <select id="room-select">  <option value="-1" id="new-room">新しい部屋の名前</option> </select>
+	  <div for="new-room">
+	    新しい部屋<br>
+	    <input type="text" id="room-name"></input>
+	  </div>
+	</div>
+
+	<div>
+	  <input type="button" value="入室" id="login-button"></input>
+	</div>
+      </div>
+    </div>
+  </body>
+</html>
